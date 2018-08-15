@@ -1,0 +1,6 @@
+
+Questions:
+
+1) find 2nd largest element in BST. why use count object instead of simple int?
+
+2) deal with the text fiel larger than Memory: do chunks..how?
