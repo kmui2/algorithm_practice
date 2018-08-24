@@ -84,6 +84,15 @@ class Solution {
 
             start = end+1;                      
         }
+		
+		/*(String[] params = qst.split("&");
+		for(String pair : params){
+			int index_for_equal = pair.indexOf("=");
+			String key = pair.substring(0,index_for_equal);
+			String val = pair.substring(index_for_equal+1);
+			nu.query_params.put(key,val);
+		}
+		*/
   
   }
   

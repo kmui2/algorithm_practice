@@ -18,3 +18,26 @@ public String remove_duplicate(String st){
 		//letters[tail]=0;
 		return String.valueOf(letters).substring(0, tail);
 }
+
+/* remove duplicate from sorted array of integers*/
+
+public int[] remove_duplicate_num(int[] arr){
+
+	int j=0;
+	int i=1;
+
+	while(i<arr.length){
+		if(arr[j]==arr[i]){
+			i++;
+		}
+		else{
+			j=j+1;
+			arr[j]=arr[i];
+			i++;
+		}
+	}
+	
+	int[] res = arrays.copyof(arr,j+1);
+	return res;
+	
+}

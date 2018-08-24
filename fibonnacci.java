@@ -60,3 +60,43 @@ public class practice{
 			fib(5); //fib(0);
 		}
 }
+
+/*
+print fibonacci series where the final number is less than or equal to the given input number
+
+input: fib(5) => 0,1,1,2,3,5
+fib(9) => 0,1,1,2,3,5,8
+fib(1) => 0,1,1
+*/
+
+public class Practice {
+
+	public static List<Integer> fib(int n){
+
+		List<Integer> res = new ArrayList<Integer>();
+
+		int a=0;
+		int b=1;
+		int c=0;
+		res.add(a);
+
+		while(b<=n){
+			res.add(b);
+			c=a+b;
+			a=b;
+			b=c;
+			
+		}
+		return res;
+		}
+	
+	
+	
+	public static void main(String[] args) {
+
+		System.out.println("fib series:"+fib(9));
+
+	}
+
+}
+
